@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Sallie Burch - Public Education Advocate, Speaker & Leadership Coach</title>
-    <meta name="description" content="32-year public education veteran offering speaking engagements, professional development, and leadership coaching. Fighting for the future of our schools.">
+    <meta name="description" content="Ed.D. and William & Mary certified coach with 32 years in education. National speaker on school vouchers, leadership, and advocacy. Book speaking engagements, PD, and coaching.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: Georgia, serif; line-height: 1.6; color: #2c3e50; background: #0a0a0a; overflow-x: hidden; }
@@ -49,8 +49,6 @@
         .mission-statement::before { content: '"'; position: absolute; top: -20px; left: 20px; font-size: 15rem; opacity: 0.1; font-family: Georgia, serif; }
         
         /* Photo Integration */
-        .photo-hero { width: 100%; max-width: 400px; height: auto; border-radius: 15px; box-shadow: 0 15px 50px rgba(0,0,0,0.2); margin: 0 auto; display: block; }
-        
         .bio-with-photo { display: grid; grid-template-columns: 350px 1fr; gap: 3rem; align-items: start; background: white; padding: 3rem; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border-left: 8px solid #c0392b; }
         .bio-photo { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
         .bio-text { font-size: 1.2rem; line-height: 2; }
@@ -60,6 +58,20 @@
         .fight-content { display: grid; grid-template-columns: 1fr 450px; gap: 3rem; align-items: center; }
         .fight-photo { width: 100%; height: auto; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
         
+        /* Credentials Section */
+        .credentials-section { background: white; padding: 3rem; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); margin-top: 3rem; }
+        .credentials-section h3 { color: #c0392b; font-size: 1.8rem; margin-bottom: 1.5rem; font-weight: 700; }
+        .credentials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .credential-item { padding: 1.5rem; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #8e44ad; }
+        .credential-item h4 { color: #2c3e50; font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 700; }
+        .credential-item p { font-size: 1rem; color: #555; line-height: 1.6; }
+        
+        /* Affiliations */
+        .affiliations-section { background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%); padding: 2.5rem; border-radius: 15px; margin-top: 3rem; }
+        .affiliations-section h3 { color: #2c3e50; font-size: 1.6rem; margin-bottom: 1.5rem; text-align: center; }
+        .affiliations-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .affiliation-item { background: white; padding: 1rem 1.5rem; border-radius: 8px; font-size: 0.95rem; color: #555; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        
         /* Stats */
         .stats-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin: 3rem 0; }
         .stat-card { background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s; position: relative; overflow: hidden; }
@@ -67,6 +79,15 @@
         .stat-card:hover { transform: translateY(-10px) scale(1.05); box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
         .stat-number { font-size: 3.5rem; font-weight: 800; color: #c0392b; margin-bottom: 0.5rem; font-family: Arial, sans-serif; }
         .stat-label { font-size: 1.1rem; color: #7f8c8d; font-weight: 600; }
+        
+        /* Speaking Experience */
+        .speaking-experience { background: white; padding: 4rem; border-radius: 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.15); margin: 3rem 0; }
+        .speaking-experience h3 { color: #c0392b; font-size: 2.2rem; margin-bottom: 2rem; font-weight: 700; }
+        .presentation-list { display: grid; gap: 1.5rem; }
+        .presentation-item { padding: 1.5rem; background: #f8f9fa; border-radius: 10px; border-left: 5px solid #8e44ad; transition: all 0.3s; }
+        .presentation-item:hover { transform: translateX(10px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        .presentation-item h4 { color: #2c3e50; font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 700; }
+        .presentation-item .date { color: #c0392b; font-weight: 600; font-size: 0.95rem; }
         
         /* Services */
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-top: 3rem; }
@@ -79,6 +100,7 @@
         .service-card ul { margin: 1.5rem 0; padding-left: 1.5rem; }
         .service-card li { font-size: 1.05rem; line-height: 1.8; color: #555; margin-bottom: 0.5rem; }
         .price-tag { background: linear-gradient(135deg, #c0392b, #8e44ad); color: white; padding: 1rem 2rem; border-radius: 10px; font-size: 1.3rem; font-weight: 700; text-align: center; margin: 1.5rem 0; }
+        .credential-badge { background: #f0f8ff; border: 1px solid #8e44ad; padding: 0.5rem 1rem; border-radius: 5px; font-size: 0.9rem; color: #8e44ad; font-weight: 600; margin-top: 1rem; display: inline-block; }
         
         /* Advocacy Pillars */
         .advocacy-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 3rem; }
@@ -156,11 +178,8 @@
             .bio-with-photo { grid-template-columns: 1fr; }
             .services-grid { grid-template-columns: 1fr; }
             .fight-content { grid-template-columns: 1fr; }
+            .credentials-grid { grid-template-columns: 1fr; }
         }
-        
-        /* Photo Placeholder Instructions */
-        .photo-instructions { background: #fff3cd; border: 2px dashed #856404; padding: 1.5rem; border-radius: 10px; text-align: center; color: #856404; font-family: Arial, sans-serif; font-size: 0.95rem; line-height: 1.6; }
-        .photo-instructions strong { display: block; font-size: 1.1rem; margin-bottom: 0.5rem; color: #c0392b; }
     </style>
 </head>
 <body>
@@ -171,7 +190,7 @@
         <div class="hero-content">
             <h1>Dr. Sallie Burch</h1>
             <p class="tagline">Public Education Advocate • Speaker • Leadership Coach</p>
-            <div class="veteran-badge">32-Year Education Veteran • Ed.D.</div>
+            <div class="veteran-badge">Ed.D. • William & Mary Certified • 32 Years in Education</div>
         </div>
     </header>
     
@@ -181,8 +200,8 @@
             <li><a href="#about">About</a></li>
             <li><a href="#advocacy">Advocacy</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#experience">Speaking</a></li>
             <li><a href="#writing">Writing</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#book">Book Sallie</a></li>
         </ul>
     </nav>
@@ -197,21 +216,52 @@
         <section id="about">
             <h2>About Dr. Sallie Burch</h2>
             <div class="bio-with-photo">
-                <!-- PHOTO 1: Professional Outdoor Headshot (blue patterned blouse) -->
-               <img src="headshot-professional.jpg" class="bio-photo" alt="Dr. Sallie Burch">
-
+                <img src="headshot-professional.jpg" class="bio-photo" alt="Dr. Sallie Burch">
                 <div class="bio-text">
                     <p>After 32 years in public education, I've seen the best of what our schools can offer—and I've watched as powerful interests work to dismantle them from the outside in.</p>
-                    <p style="margin-top: 1.5rem;">With an <strong>Ed.D. in Curriculum and Instruction</strong> from Liberty University and experience leading two elementary schools through transformational change, I now dedicate my work to <strong>advocacy, leadership coaching, and empowering educators</strong> across the nation.</p>
-                    <p style="margin-top: 1.5rem;">I bring <strong>evidence-based strategies, real-world experience, and unwavering passion</strong> to every speaking engagement, professional development session, and coaching relationship. My mission is simple: tell the truth about what vouchers and privatization really mean for our communities—and mobilize educators to fight back.</p>
+                    <p style="margin-top: 1.5rem;">With an <strong>Ed.D. in Curriculum and Instruction</strong> from Liberty University and <strong>certification in Instructional Coaching from the College of William & Mary</strong>, I bring research-based expertise to every engagement. As a principal serving 820 students—including a Level IV Advanced Academic Program—I lead with both scholarship and real-world experience.</p>
+                    <p style="margin-top: 1.5rem;">My mission is simple: tell the truth about what vouchers and privatization really mean for our communities, and <strong>mobilize educators to fight back</strong> with evidence, strategy, and unwavering commitment to our students.</p>
+                </div>
+            </div>
+            
+            <div class="credentials-section">
+                <h3>Education & Credentials</h3>
+                <div class="credentials-grid">
+                    <div class="credential-item">
+                        <h4>Ed.D., Curriculum & Instruction</h4>
+                        <p>Liberty University</p>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; font-style: italic;">Dissertation: The Impact of Teacher Intrinsic and Extrinsic Motivation on Teacher Self-Efficacy (2020)</p>
+                    </div>
+                    <div class="credential-item">
+                        <h4>Instructional Coaching Certification</h4>
+                        <p>College of William & Mary</p>
+                        <p style="margin-top: 0.5rem;">Instructional Coaching Training (ICT) Program</p>
+                    </div>
+                    <div class="credential-item">
+                        <h4>Virginia Superintendent's License</h4>
+                        <p>Commonwealth of Virginia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="affiliations-section">
+                <h3>Professional Affiliations</h3>
+                <div class="affiliations-list">
+                    <div class="affiliation-item">Delta Kappa Gamma International Society for Key Women Educators</div>
+                    <div class="affiliation-item">Women Education Leaders in Virginia</div>
+                    <div class="affiliation-item">Association for Supervision and Curriculum Development</div>
+                    <div class="affiliation-item">National Association of Elementary School Principals</div>
+                    <div class="affiliation-item">Virginia Association of Elementary School Principals</div>
+                    <div class="affiliation-item">Virginia Education Association</div>
+                    <div class="affiliation-item">National Education Association</div>
                 </div>
             </div>
             
             <div class="stats-container">
                 <div class="stat-card"><div class="stat-number">32</div><div class="stat-label">Years in Education</div></div>
                 <div class="stat-card"><div class="stat-number">10+</div><div class="stat-label">National Presentations</div></div>
-                <div class="stat-card"><div class="stat-number">820</div><div class="stat-label">Students Served (Current School)</div></div>
-                <div class="stat-card"><div class="stat-number">∞</div><div class="stat-label">Impact on Public Education</div></div>
+                <div class="stat-card"><div class="stat-number">820</div><div class="stat-label">Students Served</div></div>
+                <div class="stat-card"><div class="stat-number">7</div><div class="stat-label">Professional Affiliations</div></div>
             </div>
         </section>
 
@@ -223,9 +273,7 @@
                         <p style="font-size: 1.2rem; line-height: 2; color: #2c3e50; margin-bottom: 1.5rem;">Every day, I see the faces of the students who will suffer most when "school choice" drains resources from public schools. I see the bus drivers, custodians, and cafeteria workers whose jobs are on the line. I see the teachers stretching every dollar to serve our most vulnerable learners.</p>
                         <p style="font-size: 1.2rem; line-height: 2; color: #2c3e50; margin-bottom: 1.5rem;"><strong style="color: #c0392b;">This isn't abstract policy—it's people's lives.</strong> And I refuse to stay silent while the infrastructure of democracy crumbles beneath us.</p>
                     </div>
-                    <!-- PHOTO 2: Classroom Action (working with students at desk) -->
-                   <img src="classroom-students.jpg" class="fight-photo" alt="Dr. Burch working with students">
-
+                    <img src="classroom-students.jpg" class="fight-photo" alt="Dr. Burch working with students">
                 </div>
             </div>
 
@@ -251,13 +299,11 @@
         <section id="services">
             <h2>How I Can Help</h2>
             
-            <!-- PHOTO 3: Reading with Students in Library -->
             <div style="text-align: center; margin-bottom: 3rem;">
                 <img src="teaching-library.jpg" style="width: 100%; max-width: 600px; height: auto; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.2);" alt="Dr. Burch reading with students">
-
             </div>
             
-            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #555;">Whether you need a powerful keynote speaker, transformative professional development, or executive coaching to navigate complex challenges, I bring 32 years of real-world experience to every engagement.</p>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #555;">Whether you need a powerful keynote speaker, transformative professional development, or executive coaching to navigate complex challenges, I bring 32 years of real-world experience and research-based expertise to every engagement.</p>
             
             <div class="services-grid">
                 <div class="service-card">
@@ -292,6 +338,7 @@
                     <div class="service-icon">🎯</div>
                     <h3>Executive Leadership Coaching</h3>
                     <p>One-on-one coaching for principals, superintendents, and aspiring educational leaders navigating the complexities of modern school leadership.</p>
+                    <div class="credential-badge">✓ William & Mary ICT Certified</div>
                     <ul>
                         <li>Strategic planning & vision development</li>
                         <li>Navigating political & budget challenges</li>
@@ -300,6 +347,39 @@
                     </ul>
                     <div class="price-tag">$300/hour | Packages Available</div>
                     <a href="#book" class="cta-button">Start Coaching</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="speaking-experience">
+                <h3>Recent Professional Presentations</h3>
+                <p style="font-size: 1.15rem; margin-bottom: 2rem; color: #555;">Invited speaker at national and state conferences on instructional leadership, family engagement, and educational advocacy.</p>
+                <div class="presentation-list">
+                    <div class="presentation-item">
+                        <h4>University of Mary Washington Undergraduate Seminar</h4>
+                        <p class="date">Fall 2022</p>
+                    </div>
+                    <div class="presentation-item">
+                        <h4>National Association of Elementary School Principals Annual Conference</h4>
+                        <p class="date">Summer 2022</p>
+                    </div>
+                    <div class="presentation-item">
+                        <h4>Virginia Association of Elementary School Principals Annual Conference</h4>
+                        <p class="date">Summer 2022</p>
+                    </div>
+                    <div class="presentation-item">
+                        <h4>National Family Engagement Summit</h4>
+                        <p class="date">Fall 2021</p>
+                    </div>
+                    <div class="presentation-item">
+                        <h4>Virginia Education Association Instruction & Professional Development Conference</h4>
+                        <p class="date">Fall 2021</p>
+                    </div>
+                    <div class="presentation-item">
+                        <h4>Virginia Association of Elementary School Principals Annual Conference</h4>
+                        <p class="date">Summer 2021</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -329,24 +409,6 @@
                     <iframe src="https://sallieburch.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white; border-radius: 15px; max-width: 600px; margin: 0 auto; display: block;" frameborder="0" scrolling="no"></iframe>
                 </div>
                 <a href="https://sallieburch.substack.com" class="cta-button" target="_blank" style="background: white; color: #c0392b; margin-top: 2rem;">View All Articles on Substack</a>
-            </div>
-        </section>
-
-        <section id="testimonials">
-            <h2>What People Say</h2>
-            <div class="testimonial-section">
-                <div class="testimonial">
-                    <p>"Dr. Burch's keynote was the highlight of our conference. Her combination of data, storytelling, and passion left our entire district energized and ready to fight for our schools."</p>
-                    <p class="testimonial-author">— Superintendent, Large Urban District</p>
-                </div>
-                <div class="testimonial">
-                    <p>"Sallie's coaching transformed my leadership. She helped me navigate the toughest year of my principalship with clarity, confidence, and compassion."</p>
-                    <p class="testimonial-author">— Elementary School Principal</p>
-                </div>
-                <div class="testimonial">
-                    <p>"The professional development session Dr. Burch led for our leadership team was exactly what we needed. Practical, research-based, and immediately applicable."</p>
-                    <p class="testimonial-author">— Director of Curriculum & Instruction</p>
-                </div>
             </div>
         </section>
 
